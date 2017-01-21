@@ -1,22 +1,147 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
-    <style>
+<head>
+<style>
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    position: relative;
+    animation-name: box;
+    animation-duration: 10s;
+    animation-iteration-count: 6;
+}
+
+@-webkit-keyframes box {
+    0%   {background-color:teal; left:600px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:0px;}
+    50%  {background-color:blue; left:600px; top:600px;}
+    75%  {background-color:green; left:0px; top:600px;}
+    100% {background-color:red; left:0px; top:600px;}
+}
+
 h1 {
     text-shadow: 2px 2px skyblue;
     color:teal;
 }
-#grad1 {
+#background {
     border: 10px dotted black;
-    height: 500px;
-    background: linear-gradient(to bottom right, teal,skyblue ); 
+    height: 600px;
+    background: linear-gradient(-90deg, skyblue, teal ); 
+    box-shadow: 20px 20px 5px grey;
+}
+
+#textbox{
+    width: 100px;
+    height: 100px;
+    background: white;
+    transition: width 2s;
+}
+#textbox:hover {
+    width: 400px;
+}
+picture1 {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+picture1:hover {
+
+    transform: rotateY(150deg); 
+}
+picture2 {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+picture2:hover {
+
+   transform: rotate(20deg);
+}
+picture3 {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+picture3:hover {
+
+     transform: scale(2,3);
+}
+picture4 {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+picture4:hover {
+
+    transform: rotateY(150deg); 
+}
+picture5 {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+picture5:hover {
+
+    transform: rotateZ(150deg); 
+}
+picture6 {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+picture6:hover {
+
+transform: rotateX(150deg); 
+   
 }
 </style>
-  </head>
-  <body>
-  <h1> My Sweet 16 Memories!</h1>
-  <div id="grad1"></div>
-  </body>
+</head>
+<body>
+     <h1> My Sweet 16 Memories!</h1>
+  <div id="background">
+<picture1>
+  <img src="images/sweet1.JPG" alt="memories" width="300" height="200">
+  </picture1>
+  <picture2>
+  <img src="images/sweet2.JPG" alt="memories" width="300" height="200">
+</picture2>
+<picture3>
+  <img src="images/sweet3.JPG" alt="memories" width="300" height="200">
+  </picture3>
+  <picture4>
+  <img src="images/sweet4.JPG" alt="memories" width="300" height="200">
+  </picture4>
+  <picture5>
+  <img src="images/sweet5.JPG" alt="memories" width="300" height="200">
+  </picture5>
+  <picture6>
+  <img src="images/sweet6.JPG" alt="memories" width="300" height="200">
+  </picture6>
+<div id= "box">
+</div>
+  <div id =textbox>
+      <h1>Best "DAY" of my life</h1>
+</div>
+  </div>
+</body>
 </html>
+
